@@ -1,2 +1,1 @@
-# 3kvn
-TQC Private - SV Tần Tử Anh
+#Tam Quốc Chí Private - SV Tần Tử Anh

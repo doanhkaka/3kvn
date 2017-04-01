@@ -1,0 +1,446 @@
+.twine-reset {
+    color: #000;
+    background: #FFF;
+}
+
+.twine-reset body,.twine-reset div,.twine-reset dl,.twine-reset dt,.twine-reset dd,.twine-reset ul,.twine-reset ol,.twine-reset li,.twine-reset h1,.twine-reset h2,.twine-reset h3,.twine-reset h4,.twine-reset h5,.twine-reset h6,.twine-reset pre,.twine-reset code,.twine-reset form,.twine-reset fieldset,.twine-reset legend,.twine-reset input,.twine-reset textarea,.twine-reset p,.twine-reset blockquote,.twine-reset th,.twine-reset td {
+    margin: 0;
+    padding: 0;
+    line-height:1.4;
+}
+
+.twine-reset table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.twine-reset fieldset,.twine-reset img {
+    border: 0;
+    display: inline;
+}
+
+.twine-reset address,.twine-reset caption,.twine-reset cite,.twine-reset code,.twine-reset dfn,.twine-reset em,.twine-reset strong,.twine-reset th,.twine-reset var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.twine-reset ol,.twine-reset ul {
+    list-style: none;
+}
+
+.twine-reset caption,.twine-reset th {
+    text-align: left;
+}
+
+.twine-reset h1,.twine-reset h2,.twine-reset h3,.twine-reset h4,.twine-reset h5,.twine-reset h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.twine-reset q:before,.twine-reset q:after {
+    content: '';
+}
+
+.twine-reset abbr,.twine-reset acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+.twine-reset sup {
+    vertical-align: text-top;
+}
+
+.twine-reset sub {
+    vertical-align: text-bottom;
+}
+
+.twine-reset input,.twine-reset textarea,.twine-reset select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.twine-reset input,.twine-reset textarea,.twine-reset select {
+    font-size: 100%;
+}
+
+.twine-reset legend {
+    color: #000;
+}
+
+#yui3-css-stamp.cssreset-context {
+    display: none;
+}
+
+
+#twine-embed-iframe,.twine-embed-iframe {border: 0;}
+.twine-embed-iframe.flexible {overflow-y: hidden !important;-moz-overflow: hidden;}
+.twine-embed-iframe.fixed {overflow-y: auto !important;}
+iframe.twine-embed-iframe::-webkit-scrollbar {display:none;}
+iframe.twine-embed-iframe::-moz-vertical-scrollbar{display: none;}
+
+#twine-modal-background {
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:black;
+    opacity:.7;
+	z-index:999;
+	display:none;
+}
+
+#twine-modal-player, #twine-modal-editor, #twine-modal-creator, #twine-modal-prompt {
+	display:none;
+	x-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.2);
+	x-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.2);
+	xbox-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.2);
+	z-index:10000;
+	position:absolute;
+}
+
+#twine-modal-creator-content {
+	width:100%;
+	border:none;
+}
+
+#twine-modal-editor {
+	position:fixed;
+	border-radius:8px;
+	padding:0px;
+	left: 50%;
+	top:5%;
+	background-color:rgb(250, 250, 250);
+	border-left:none;
+	border-right:none;
+	border-radius:8px;
+	height: 100%;	
+	width: 100%;
+	background: transparent;
+}
+
+#twine-modal-editor iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+#twine-modal-creator {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+	top:5%;
+	background-color:rgb(250, 250, 250);
+	border-radius:0px;
+	background: transparent;
+	width: 80%;
+	position: fixed;
+	overflow:hidden;
+}
+
+#twine-modal-prompt {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+	top:35%;
+	background-color:rgb(250, 250, 250);
+	border-radius:0px;
+	width: 60%;
+	position: fixed;
+	overflow:hidden;
+}
+
+#twine-modal-prompt .fa-stack-2x {
+	color: #fff;
+}
+
+#twine-modal-prompt .fa-stack-1x {
+	color: #999;
+}
+
+body #twine-modal-creator.ios-scroll {
+	-webkit-overflow-scrolling:touch;
+	overflow-y:auto;
+	overflow-x:hidden;	
+	position: absolute;
+}
+
+@media only screen and (max-width: 458px) {
+	#twine-modal-creator {
+		overflow-y:auto;
+		overflow-x:hidden;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#twine-modal-creator {
+		width: 100% !important;
+	}
+	
+	body #twine-modal-player #twine-modal-content {
+	    display: block;
+	    position: relative;
+	    width: 100%;
+	    left: 0px;
+	    border-radius: 0px;	
+	}
+	
+	body #twine-modal-player #twine-modal-sidebar {
+	    display: block;
+	    position: relative;
+	    left: 0px;
+	    border-radius: 0px;
+	}
+    
+    body .modal-layout-image.modal-add-padding {
+        margin: 5px;
+    }
+    
+    body #twine-modal-player {
+    	margin-top: 3px;
+    }
+    
+    body #twine-modal-content-img {
+    	min-height: 0px;
+    }
+    
+    body #twine-modal-wrapper {
+    	min-height: 0px;
+    }
+    
+    #twine-modal-content-img {
+    	overflow: hidden;
+    }
+    
+    .cta-details-wrapper .cta-detail {
+    	position: relative !important;
+    }
+    
+    body #twine-close {
+    	position: fixed;
+		top: 10px;
+		right: 5px;
+		padding: 4px;
+		z-index: 1000;
+    }
+    
+    body #twine-close:before {    
+		color: #525151;
+		content: '\00D7';
+		display: block;
+		font-size: 37px;
+		font-weight: 600;
+		line-height: 27px;
+		padding: 0;
+		margin: 0;
+		width: 32px;
+		height: 32px;
+		background: #FFF;
+		text-align: center;
+		vertical-align: middle;
+		box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+		border-radius: 17%;
+	}  
+	
+	#twine-modal-prompt {
+	    width: 98%;
+	    top: 5px;	    
+	}
+	
+	#twine-modal-prompt #twine-close {
+	    top: 5px;
+    }
+}
+
+#twine-modal-editor iframe, {
+	height:100%;
+	width:100%;
+	border:none;
+}
+
+#twine-modal-player:hover #twine-close {
+	color: rgba(0,0,0,0.75);
+}
+
+#twine-close:before {
+    color: #888;
+    content: '\00D7';
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+#twine-close {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+}
+
+#twine-modal-background:hover #twine-close {
+	color: #fff !important;
+}
+
+#twine-modal-player #powered-by-twine {
+	position:absolute;
+	right:-10px;
+	bottom:-50px;
+	background-color: rgb(87, 87, 87);
+	padding-bottom: 8px;
+	padding-top: 11px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size:10px;
+	text-align:right;
+	display: inherit !important;
+	visibility:inherit !important;
+}
+
+#twine-modal-player .twine-modal-caption .link {
+	cursor: pointer;
+}	
+
+#powered-by-twine img {
+	width:125px;
+	opacity:.5;
+	display: inherit !important;
+}
+
+#twine-modal-player #powered-by-twine, #twine-modal-player #powered-by-twine a {
+	color: rgb(133,133,133);
+	text-decoration:none;
+	display: inherit !important;
+	visibility:inherit !important;
+}
+
+#twine-modal-player a.twine-modal-original-post, a.twine-modal-author-profile {
+	text-decoration: none;
+	color: #888;
+	cursor: pointer;
+}
+
+#twine-modal-player .twine-modal-original-post:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+#twine-toolbar-launcher {
+	position: fixed;
+	bottom: -3px;
+	left: 30px;
+	width: 80px;
+	height: 32px;
+	cursor: pointer;
+	background-color: #000000;
+	text-align: center;
+	padding-top: 7px;
+	z-index: 5000;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	opacity:.3;
+}
+
+#twine-toolbar-launcher:hover {
+	opacity:1;
+}
+
+#twine-toolbar-launcher img {
+	width:48px;
+	display:inline;
+}
+
+
+#twine-toolbar-content {
+	width:100%;
+	height:100%;
+	border:none;
+}
+
+#twine-toolbar-content-frame.twine-toolbar-expanded {
+	width:550px;
+	height:90%;
+}
+
+#twine-toolbar-content-frame {
+	position:fixed;
+	height:50%;
+	min-height:560px;
+	bottom:0px;
+	left:15px;
+	width:350px;
+	opacity:.95;
+	border: 1px solid rgba(128, 128, 128, 0.28);
+	z-index:5001;
+	display:none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.08);
+	-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.08);
+	box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.08);
+
+}
+
+/**	
+	Likes Tag
+**/
+.badge {
+	position: absolute;
+  	right: 20px;
+}
+
+
+/**
+	DAVID WALSH RESPONSIVE IFRAME CSS
+**/
+
+#twine-modal-creator {
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	top: 5%;
+	-webkit-overflow-scrolling: touch !important;
+	overflow-y: scroll !important;
+}
+
+#twine-modal-creator iframe {
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	display: block;
+}
+
+@media only screen and (max-width: 768px) {
+	#twine-modal-creator {
+		width: 100%;
+		top: 0px;
+	}
+}
+
+#prompt-inner {
+    padding: 20px;
+    text-align: center;
+}
+
+[data-url] {
+	cursor: pointer;
+}
+
+#prompt-inner {
+    padding: 20px;
+    text-align: center;    
+}
+
+#prompt-inner h2 {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+}

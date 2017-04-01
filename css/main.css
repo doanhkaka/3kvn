@@ -1,0 +1,1881 @@
+@font-face {
+    font-family: 'impressumbold';
+    src: url('../font/impressum-bold-webfont.woff2') format('woff2'),
+         url('../font/impressum-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'i_impressum_italicregular';
+    src: url('../font/impressum-italic-webfont.woff2') format('woff2'),
+         url('../font/impressum-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'impressumregular';
+    src: url('../font/impressum-regular-webfont.woff2') format('woff2'),
+         url('../font/impressum-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'impressumroman';
+    src: url('../font/impressum-roman-webfont.woff2') format('woff2'),
+         url('../font/impressum-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../font/mark_simonson_-_proxima_nova_bold-webfont.woff2') format('woff2'),
+         url('../font/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../font/mark_simonson_-_proxima_nova_regular-webfont.woff2') format('woff2'),
+         url('../font/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+a:focus, a:hover, a:visited, a:active
+{
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+/* reusable body elements */
+
+html, body {
+  padding:0;
+  margin: 0;
+  background-color: #1a1e3d;
+  color: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+body.still-loading
+{
+    max-height: 100%;
+    overflow: hidden;
+}
+video
+{
+    margin: 0;
+  padding: 0;
+}
+.container, .content-container
+{
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.content-container
+{
+    background-color: #000;
+    max-width: 1584px;
+}
+body.hd28 .content-container
+{
+    background-color: #000;
+    background-image: url(../img/components/kingdom-hearts-28-argyle.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: left top;
+}
+.section.home .section.story
+{
+    background-color: none;
+}
+.section.story.homepage
+{
+    min-height: 0;
+}
+.single-game-nav, .fixed-single-game-nav
+{
+    text-align: right;
+    overflow: visible;
+    text-shadow: 2px 2px 4px #000;
+    position: relative;
+    z-index: 998;
+}
+.single-game-nav-logo
+{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    max-width: 400px;
+    z-index: 1047;
+}
+.main-logo
+{
+    
+}
+.included-logo
+{
+    opacity: .5;
+}
+.included-logo.active, .included-logo:hover
+{
+    opacity: 1;
+}
+.buy-btn, .buy-btn:active, .buy-btn:visited, .buy-btn:focus
+{
+  background-color: #ebb837;
+  font-family: 'proxima_nova_rgbold', Arial, sans-serif;
+  font-weight: 700;
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #ebb837;
+  color: #fff;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+}
+.buy-btn:hover
+{
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  text-decoration: none;
+}
+.section-header
+{
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-image: url(../img/components/kingdom-hearts-section-header-separator.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px 0;
+}
+.section.heroes .section-header, .section.villains .section-header, .section.xiii .section-header
+{
+    padding: 50px 0 0 0;
+    background-position: center 58px;
+}
+.section-header-inner
+{
+  background-image: url(../img/components/kingdom-hearts-section-header-crown.png);
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #000;
+  text-transform: uppercase;
+  min-height: 70px;
+  position: relative;
+}
+.section-header-inner span
+{
+  font-size: 16px;
+  font-weight: 700;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  line-height: 95px;
+  text-shadow:
+   -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+
+}
+.header-still
+{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.slick-slide
+{
+    outline: 0;
+    border: none;
+}
+.single-trailer-parent.slick-slide
+{
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.trailer-house
+{
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  width: 90%;
+  max-height: 640px;
+  margin: 0 auto 0 auto;
+  border: 2px solid rgba(0,0,0,0);
+    -webkit-transition: all 110ms ease-in-out;
+    -moz-transition: all 110ms ease-in-out;
+    -ms-transition: all 110ms ease-in-out;
+    -o-transition: all 110ms ease-in-out;
+    transition: all 110ms ease-in-out;
+}
+.trailer-house:hover
+{
+  border: 2px solid #1a1e3d;
+}
+.trailer-house.right-trailer
+{
+    margin: 30px auto 30px 0;
+}
+.trailer-house.left-trailer
+{
+    margin: 30px 0 30px auto;
+}
+.slick-slide .trailer-house:after
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.75);
+    display: block;
+    content: '';
+}
+.slick-slide.slick-current .trailer-house:after
+{
+    display: none;
+}
+.slick-slide.slick-current .trailer-house
+{
+    width: 100%;
+}
+.slick-prev-arrow, .slick-next-arrow
+{
+    position: absolute;
+    width: 27px;
+    height: 26px;
+    display: block;
+    top: calc(50% - 13px);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 99;
+    cursor: pointer;
+}
+.slick-next-arrow
+{
+    background-image: url(../img/components/next-arrow.png);
+    right: 5%;
+}
+.slick-prev-arrow
+{
+    background-image: url(../img/components/previous-arrow.png);
+    left: 5%;
+}
+.trailer-house.about
+{
+    border-top: 2px solid #ebb837;
+    border-right: 2px solid #ebb837;
+    border-left: 2px solid #ebb837;
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+}
+.trailer-house.about:hover
+{
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.trailer-house.about:hover:before, .trailer-house.about:hover:after
+{
+    background-color: #fff;
+}
+.trailer-house.about:before, .trailer-house.about:after
+{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 10%;
+  background-color: #ebb837;
+  bottom: 0;
+}
+.trailer-house.about:before
+{
+  left: 0;
+}
+.trailer-house.about:after
+{
+  right: 0;
+}
+.trailer-house img
+{
+  width: 100%;
+}
+.trailer-house .play-btn
+{
+  position: absolute;
+  left: calc(50% - 45px);
+  top: calc(50% - 45px);
+  display: block;
+  max-width: 91px;
+}
+.trailer-title
+{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000;
+    position: relative;
+}
+.trailer-title span
+{
+    display: block;
+    width: 80%;
+    word-wrap: normal;
+    white-space: normal;
+    margin: 0 auto;
+}
+.trailer-title.about
+{
+    background: none;
+    margin-top: -20px;
+}
+.slick-current .trailer-title
+{
+    background-color: #1a1e3d;
+}
+.screenshot-thumbs-holder
+{
+  text-align: center;
+  padding: 0 50px;
+}
+.screenshot-thumbs-holder img
+{
+  border: 2px solid rgba(0,0,0,0);
+  display: inline-block;
+  margin: 10px;
+  width: 20%;
+  cursor: pointer;
+  min-width: 300px;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+}
+.screenshot-thumbs-holder img:hover
+{
+    border: 2px solid #1a1e3d;
+}
+
+.story-content
+{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.parent-game-logo
+{
+    width: 50%;
+    max-width: 500px;
+    display: block;
+    margin: 50px auto 0 auto;
+    position: relative;
+    min-width: 450px;
+}
+.timeline-bar
+{
+    background-color: #f9dd87;
+    width: 100%;
+    height: 4px;
+    position: relative;
+    margin: 50px auto 0 auto;
+    width: 60.375%;
+}
+.individual-game-logo
+{
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    min-width: 300px;
+    -webkit-transition: all 220ms ease-in-out;
+    -moz-transition: all 220ms ease-in-out;
+    -ms-transition: all 220ms ease-in-out;
+    -o-transition: all 220ms ease-in-out;
+    transition: all 220ms ease-in-out;
+}
+.story-content.hd1525 .individual-game-logo
+{
+    width: 15%;
+    min-width: 0;
+}
+.story-content.hd1525 .timeline-bar
+{
+    width: 75.5%;
+}
+.timeline-content .individual-game-logo
+{
+    width: 25%;
+}
+.individual-game-logo:before, .timeline-bar:before, .timeline-content .individual-game-logo:after
+{
+    content: '';
+    position: relative;
+    margin: 0 auto 10px auto;
+    width: 4px;
+    height: 20px;
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9dd87+0,f5d783+50,ad8b46+68,c7a85c+100 */
+    background: #f9dd87; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9dd87 0%, #f5d783 50%, #ad8b46 68%, #c7a85c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f9dd87 0%,#f5d783 50%,#ad8b46 68%,#c7a85c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f9dd87 0%,#f5d783 50%,#ad8b46 68%,#c7a85c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9dd87', endColorstr='#c7a85c',GradientType=0 ); /* IE6-9 */
+}
+.timeline-content .individual-game-logo:before, .timeline-content .timeline-bar:before
+{
+    display: none;
+}
+.timeline-content h1
+{
+    margin-top: 0;
+}
+.timeline-content
+{
+    padding: 50px 0 100px 0;
+}
+.timeline-content .individual-game-logo:before
+{
+    content: '';
+    background: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    border: 4px solid #000;
+    left: calc(50% - 14px);
+}
+.timeline-content .individual-game-logo:after
+{
+    height: 100px;
+    margin: 0 auto;
+    background: #fff;
+}
+.timeline-content .timeline-bar
+{
+    margin: 0 auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,f9dd87+50,000000+100 */
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(left,  #000000 0%, #f9dd87 50%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #000000 0%,#f9dd87 50%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #000000 0%,#f9dd87 50%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+    width: 100%;
+}
+.timeline-bar:before
+{
+    left: calc(50% - 2px);
+    margin: 0 auto;
+    position: absolute;
+    top: -20px;
+}
+.individual-game-logo-img
+{
+    position: relative;
+    width: 80%;
+    opacity: .5;
+}
+.individual-game-logo-burst
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+.timeline-content .individual-game-logo-burst
+{
+    top: -100px;
+}
+.individual-game-logo:hover .individual-game-logo-img, .individual-game-logo:hover .individual-game-logo-burst, .individual-game-logo.active .individual-game-logo-img, .individual-game-logo.active .individual-game-logo-burst
+{
+    opacity: 1;
+}
+/* home styles */
+.section.story
+{
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 0;
+    min-height: 1856px;
+}
+.section.story.content
+{
+    min-height: 0;
+}
+.section.story.hd28
+{
+    background-image: url(../img/key-art/kingdom-hearts-28-key-art.jpg);
+}
+.section.story.hd1525
+{
+    background-image: url(../img/key-art/kingdom-hearts-15-25-key-art.jpg);
+    background-color: #000;
+    max-width: 1584px;
+    margin: 0 auto;
+    min-height: 1206px;
+}
+.section.story.unchained
+{
+    background-image: url(../img/key-art/kingdom-hearts-unchained-chi-key-art.jpg);
+    background-color: #000;
+    max-width: 1584px;
+    margin: 0 auto;
+    min-height: 953px;
+}
+.section.story.union-wallpapers
+{
+    background-color: #000;
+    background-image: url(../img/components/kingdom-hearts-unchained-chi-argyle.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: left top;
+    max-width: 1584px;
+    margin: 0 auto;
+    min-height: 953px;
+}
+.union-chi-key-art
+{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.union-chi-logo
+{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.game-info-text
+{
+    text-align: center;
+    margin-top: 50px;
+}
+.game-info-text h1, .game-info-text div
+{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.game-info-text.what-is div
+{
+    padding-bottom: 10px;
+}
+h1
+{
+    font-family: 'impressumregular', Arial, sans-serif;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.section.story.homepage .content-container, .section.worlds .content-container, .section.heroes .content-container, .section.villains .content-container, .section.xiii .content-container, .section.story.timeline .content-container
+{
+    background-color: #000;
+    background-image: url(../img/components/kingdom-hearts-home-argyle.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: left top;
+}
+
+.section.story.three .content-container
+{
+    background-color: #000;
+    background-image: url(../img/components/kingdom-hearts-iii-argyle.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: left top;
+}
+.section.medals.content .content-container, .section.avatars.content .content-container
+{
+    background-color: #000;
+    background-image: url(../img/components/kingdom-hearts-unchained-chi-argyle.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: left top;
+}
+.section.story.three .content-container h1
+{
+    margin-bottom: 0;
+}
+.section.story.three .content-container
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* consistent header contents */
+.square-enix-header
+{
+	position: relative;
+	width: 100%;
+	background-color: #1a1e3d;
+	padding: 5px 0;
+}
+.square-enix-logo
+{
+	padding: 15px 0;
+	width: 20%;
+	max-width: 171px;
+    vertical-align: middle;
+}
+.flag-parent
+{
+    text-align: right;
+    width: auto;
+	padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.flag-container {
+    display: inline-block;
+    height: auto;
+    margin-top: -34px;
+    max-height: 42px;
+    position: relative;
+    transition: all 330ms ease-in-out 0s;
+    vertical-align: middle;
+    width: 42px;
+}
+.flag-inner:hover
+{
+	max-height: 600px;
+}
+.flag-inner {
+    background-color: #1a1e3d;
+    background-position: center 42px;
+    left: 0;
+    max-height: 32px;
+    overflow: hidden;
+    padding: 0 10px 10px;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    transition: all 330ms ease-in-out 0s;
+}
+.flag
+{
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/components/flags.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        display: inline-block;
+}
+.flag:first-child
+{
+  background-color: rgba(0,0,0,0);
+}
+.flag.flag-au {background-position: -32px 0}
+.flag.flag-be {background-position: -64px 0}
+.flag.flag-br {background-position: -96px 0}
+.flag.flag-ca {background-position: -128px 0}
+.flag.flag-de {background-position: 0 -32px}
+.flag.flag-dk {background-position: -32px -32px}
+.flag.flag-es {background-position: -64px -32px}
+.flag.flag-fi {background-position: -96px -32px}
+.flag.flag-fr {background-position: -128px -32px}
+.flag.flag-gb {background-position: 0 -64px}
+.flag.flag-it {background-position: -32px -64px}
+.flag.flag-mx {background-position: -64px -64px}
+.flag.flag-nl {background-position: -96px -64px}
+.flag.flag-no {background-position: -128px -64px}
+.flag.flag-nz {background-position: 0 -96px}
+.flag.flag-pl {background-position: -32px -96px}
+.flag.flag-ru {background-position: -64px -96px}
+.flag.flag-se {background-position: -96px -96px}
+.flag.flag-us {background-position: -128px -96px}
+
+.social-space
+{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 24px;
+	float: right;
+}
+.social-space .social-link, .social-space .social-link:visited, .social-space .social-link:active, .social-space .social-link:focus
+{
+    color: #fff;
+    display: inline-block;
+    line-height: 0;
+    margin-right: 10px;
+    padding: 10px 5px;
+    text-decoration: none;
+    transition: all 330ms ease-in-out 0s;
+}
+.social-link.facebook i, .social-link.twitter i, .social-link.instagram i
+{
+	margin-left: 5px;
+}
+.social-link.youtube {
+    margin-right: 0;
+}
+.social-space .social-link:hover
+{
+	color:  #464c80;
+	text-decoration: none;
+}
+
+.menu-btn
+{
+  position: absolute;
+  display: block;
+  opacity: .7;
+  top: 65px;
+  left: 10px;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+}
+.menu-btn:hover
+{
+  opacity: 1;
+}
+.section.home
+{
+    position: relative;
+    z-index: 1;
+}
+.section.home .container
+{
+    position: relative;
+}
+.section.home .video-home
+{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.section.home .video-home video
+{
+    width: 100%;
+    padding: 0 !important;
+}
+body[class=home] .section.home .video-home:after
+{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+    
+    position: absolute;
+    display: block;
+}
+.header-logo
+{
+  width: 100%;
+  max-width: 458px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 121px);
+  left: calc(50% - 229px);
+  z-index: 1047;
+}
+.mobile-nav-open
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: .75;
+    display: none;
+    cursor: pointer;
+    z-index: 1048;
+}
+.mobile-nav-open:hover
+{
+    opacity: 1;
+}
+.main-navigation, .fixed-main-navigation
+{
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #716992;
+    overflow: visible;
+    z-index: 999;
+    margin: 0 auto;
+}
+body[class=home] .main-navigation
+{
+    margin-top: -7px;
+}
+.fixed-main-navigation
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(26,30,61,.75);
+    width: 100%;
+    display: none;
+}
+.nav-item
+{
+    color: #fff;
+    font-family: 'proxima_nova_rgbold', Arial, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+}
+.nav-item.active, .nav-item:hover, .games-navigation .nav-item.active, .games-navigation .nav-item:hover
+{
+    background-color: #716992;
+}
+.nav-item.buy
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9dd87+0,f5d783+39,ad8b46+47,c7a85c+100 */
+    background: #f9dd87; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9dd87 0%, #f5d783 39%, #ad8b46 47%, #c7a85c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f9dd87 0%,#f5d783 39%,#ad8b46 47%,#c7a85c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f9dd87 0%,#f5d783 39%,#ad8b46 47%,#c7a85c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9dd87', endColorstr='#c7a85c',GradientType=0 ); /* IE6-9 */
+}
+.nav-item.buy.outbound
+{
+    font-size: 1.4em;
+    text-shadow: 2px 2px 4px #000;
+    padding: 7px 10px;
+    vertical-align: middle;
+}
+.games-navigation
+{
+    bottom: -201%;
+    left: 0;
+    position: absolute;
+    width: 500%;
+    height: auto;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+    z-index: 999;
+}
+.nav-item.games:hover .games-navigation
+{
+    max-height: 1000px;
+    border-top: 1px solid #716992;
+}
+.games-navigation .nav-item
+{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-transform: none;
+    text-align: left;
+    background-color: #1c2141;
+}
+.section.buy .col-md-6
+{
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0;
+}
+.container-small
+{
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+}
+.container-small img
+{
+    max-width: 100%;
+}
+.buy-info
+{
+    text-align: left;
+    font-size: 1em;
+}
+.buy-info-body
+{
+    font-size: 1.25em;
+}
+/* footer elements */
+.legal-logo
+{
+  margin: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.footer-container p a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.legal-logo:nth-child(5)
+{
+    display: none;
+}
+
+.rating-image.us
+{
+    max-width: 200px;
+    object-fit: fill;
+}
+.rating-image
+{
+    max-width: 90px;
+    object-fit: initial !important;
+}
+.footer-container {
+    padding-top: 20px;
+}
+.footer-container img {
+  object-fit: none;
+  color: rgba(0,0,0,0);
+  margin-bottom: 20px;
+}
+
+.Rating-esrb {
+  object-position: 0px -75px;
+  background-position: 0px -75px;
+  background-size: auto;
+  width: 185px;
+  height: 76px;
+}
+
+.Rating-pegi {
+  object-position: 0px -75px;
+  background-position: 0px -75px;
+  background-size: auto;
+  width: 185px;
+  height: 76px;
+  
+}
+
+.PlayStation-4 {
+  object-position: -116px -22px;
+  background-position: -116px -22px;
+  background-size: auto;
+  width: 142px;
+  height: 33px;
+}
+
+.Square-Enix {
+  object-position: 0px 0px;
+  background-position: 0px 0px;
+  background-size: auto;
+      width: 222px;
+      height: 22px;
+}
+
+.Disney {
+  object-position: 0px -22px;
+  background-position: 0px -22px;
+  background-size: auto;
+  width: 116px;
+  height: 52px;
+}
+
+.Privacy {
+  object-position: 0px -152px;
+  background-position: 0px -152px;
+  background-size: auto;
+  width: 80px;
+  height: 108px;
+}
+
+.Tomb-Raider-20th-Anniversary {
+  object-position: -103px -152px;
+  width: 156px;
+  height: 146px;
+  display: none;
+}
+.legal-center
+{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 10px;
+	font-size: 12px;
+	font-weight: 400;
+	width: 40%;
+	min-width: 350px;
+	font-family: Arial, sans-serif;
+}
+.legal-center .legal-logo
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.footer
+{
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #1a1e3d;
+}
+.footer:before
+{
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,a5a5a5+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #a5a5a5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#a5a5a5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#a5a5a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a5a5a5',GradientType=0 ); /* IE6-9 */
+}
+.footer-link
+{
+    margin-right: 20px;
+}
+.footer-link:hover
+{
+    text-decoration: none;
+}
+.footer-legal-text
+{
+    margin-top: 20px;
+}
+
+.logos-house
+{
+  background-color: #000;
+  border-bottom: 4px solid #ebb837;
+}
+.logo-link, .logo-link:hover, .logo-link:focus, .logo-link:active, .logo-link:visited
+{
+  text-decoration: none;
+  color: #fff;
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+    padding: 10px 0;
+}
+.logo-link:after
+{
+  content: '';
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  left: 45%;
+  height: 4px;
+  background-color: #ebb837;
+}
+.logo-link:hover, .logo-link.active
+{
+  background-color: #464c80;
+}
+.logo-link:hover:after, .logo-link.active:after
+{
+  display: block;
+}
+.logo-link img
+{
+  width: 80%;
+}
+
+/* Select styles for retailer combo box */
+.select-style {
+    background: rgba(255, 255, 255, 0) url('../img/components/select-arrows.png') no-repeat scroll 95% 50%;
+    border: 2px solid #fff;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 5px 40px 5px 10px;
+    width: auto;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+}
+.select-style::-ms-expand {
+    display: none;
+}
+.select-style option
+{
+    color: #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background-color: #000;
+}
+.select-style select:focus {
+    outline: none;
+}
+.select-style option:hover, .select-style option:selected
+{
+    background-color: #1a1e3d;
+}
+
+/* 2.8 styles */
+.section.soundtrack.content
+{
+    padding: 100px 0;
+}
+.section.streaming.content h1
+{
+    text-transform: uppercase;
+}
+.remix-container .col-md-6 img
+{
+    max-width: 100%;
+}
+.itunes-link
+{
+    display: block;
+    margin: 30px auto;
+    position: relative;
+    width: auto;
+    text-align: center;
+    max-width: 250px;
+}
+.single-character
+{
+    font-size: 1.5em;
+    font-family: 'impressumregular';
+    text-align: center;
+    cursor: pointer;
+    opacity: .5;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+}
+.avatars-slider .single-character, .medals-slider .single-character
+{
+    opacity: 1;
+}
+.avatars-copy
+{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.mobile-buy-btn
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 35%;
+    margin-right: 15px;
+    opacity: .5;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+}
+.mobile-buy-btn:hover
+{
+    opacity: 1;
+}
+.mobile-buy-btn img
+{
+    max-width: 100%;
+}
+.single-character:hover, .single-character.active
+{
+    opacity: 1;
+}
+.single-character img, .single-world img
+{
+    max-width: 90%;
+}
+.character-text-slider
+{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 30px;
+    max-height: 0;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    -webkit-transition: all 330ms ease-in-out;
+    -moz-transition: all 330ms ease-in-out;
+    -ms-transition: all 330ms ease-in-out;
+    -o-transition: all 330ms ease-in-out;
+    transition: all 330ms ease-in-out;
+}
+.character-text-slider.active
+{
+    max-height: 10000px;
+    padding: 30px;
+}
+.single-character-copy
+{
+    text-align: center;
+    font-size: 1.2em;
+}
+.xiii .content-container, .worlds .content-container
+{
+    padding-bottom: 100px;
+}
+.character-art, .world-logo, .disney-movie-logo
+{
+    margin: 0 auto;
+}
+.world-name
+{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.disney-movie-logo
+{
+    width: 40%;
+}
+.single-world
+{
+    display: inline-block !important;
+    vertical-align: bottom;
+    float: none;
+}
+
+/* loading screen */
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.uil-ring-css {
+  background-color: rgba(0,0,0,.9);
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.uil-ring-css.active
+{
+   display: block;
+}
+.uil-ring-css > div {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 160px;
+  top: calc(50% - 80px);
+  left: calc(50% - 80px);
+  border-radius: 80px;
+  box-shadow: 0 6px 0 0 #1a1e3d;
+  -ms-animation: uil-ring-anim 1s linear infinite;
+  -moz-animation: uil-ring-anim 1s linear infinite;
+  -webkit-animation: uil-ring-anim 1s linear infinite;
+  -o-animation: uil-ring-anim 1s linear infinite;
+  animation: uil-ring-anim 1s linear infinite;
+}
+.loading-holder
+{
+   
+}
+
+#middleware-info
+{
+    width: 50%;
+    margin: 50px auto;
+    background-color: #000;
+    padding: 30px;
+    border: 4px solid #1a1e3d;
+}
+.mfp-close-btn-in .mfp-close
+{
+    color: #fff;
+    font-size: 3em;
+}
+.section.social.content .content-container
+{
+}
+
+/* Union X Update CSS */
+
+.pre-reg-rewards-image
+{
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+}
+.pre-reg-rewards-image.stretch
+{
+    width: 35%;
+    top: 0;
+    right: -20%;
+}
+.avatars-copy ol
+{
+    width: 100%;
+    position: relative;
+    margin: 0 auto !important;
+    padding-bottom: 50px;
+    display: block;
+    max-width: 1000px;
+}
+.avatars-copy ol li
+{
+    width: 100%;
+    position: relative;
+    margin: 25px auto;
+    display: block;
+    background-color: #1a1e3d;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    border-top: 5px solid #f9dd87;
+    border-bottom: 5px solid #c7a85c;
+    border-left: 5px solid rgba(0,0,0,0);
+    border-right: 5px solid rgba(0,0,0,0);
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-align: left;
+}
+.right-carat
+{
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: middle;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9dd87+0,f5d783+39,ad8b46+47,c7a85c+100 */
+    background: #f9dd87; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9dd87 0%, #f5d783 39%, #ad8b46 47%, #c7a85c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f9dd87 0%,#f5d783 39%,#ad8b46 47%,#c7a85c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f9dd87 0%,#f5d783 39%,#ad8b46 47%,#c7a85c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9dd87', endColorstr='#c7a85c',GradientType=0 ); /* IE6-9 */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 5px 0;
+}
+.avatars-copy ol li:before, .avatars-copy ol li:after
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9dd87+0,f5d783+39,ad8b46+47,c7a85c+100 */
+    background: #f9dd87; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9dd87 0%, #f5d783 39%, #ad8b46 47%, #c7a85c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f9dd87 0%,#f5d783 39%,#ad8b46 47%,#c7a85c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f9dd87 0%,#f5d783 39%,#ad8b46 47%,#c7a85c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9dd87', endColorstr='#c7a85c',GradientType=0 ); /* IE6-9 */
+    z-index: 0;
+    width: 5px;
+}
+
+.avatars-copy ol li:after
+{
+    left: -5px;
+}
+.avatars-copy ol li:before
+{
+    right: -5px;
+}
+.rewards-text
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body.unchained[lang=us] .avatars-copy
+{
+    width: 100%;
+}
+
+body.unchained[lang=us] .nav-item.avatars, body.unchained[lang=us] .nav-item.medals, body.unchained[lang=us] .nav-item.images
+{
+    display: none;
+}
+.pre-reg-cta
+{
+    font-size: 1.5em;
+}
+body.unchained[lang=us] .section.story.unchained
+{
+    min-height: 0;
+}
+.reward-disclaimer
+{
+    font-size: .75em;
+    text-align: right;
+    margin: 20px auto;
+    padding-right: 20px;
+    max-width: 1000px;
+}
+.clear-reward
+{
+    position: absolute;
+    top: 32.5%;
+    left: 10%;
+    width: 100%;
+    max-width: 770px;
+    background-size: contain;
+    min-height: 50px;
+    background-position: center center;
+    background-image: url(../img/union-rewards/kh_union_x_clear.png);
+    transform: rotate(-11deg);
+    background-repeat: no-repeat;
+}
+.clear-reward.stretch
+{
+    background-image: url(../img/union-rewards/kh_union_x_stretch_goal.png);
+    width: 50%;
+    top: 8%;
+    left: 0;
+    transform: rotate(-5deg);
+}
+.mobile-os-header, .wallpapers-download-btn
+{
+    font-size: 1.5em;
+    font-family: 'impressumregular', Arial, sans-serif;
+    margin: 20px auto;
+    display: block;
+}
+.wallpapers-download-btn
+{
+    width: 80%;
+    max-width: 383px;
+}
+.wallpapers-download-btn img
+{
+    width: 100%;
+}
+.wallpapers-fan
+{
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    max-width: 830px;
+}
+.limited-title
+{
+    font-family: 'impressumregular', Arial, sans-serif;
+    font-size: 36px;
+}
+.limited-edition-disclaimer
+{
+    font-size: 12px;
+    font-style: italic;
+    margin: 20px auto;
+}
+@media only screen and (max-width: 768px)
+{
+    .clear-reward
+    {
+        width: 80%;
+        position: relative;
+        margin: 20px auto;
+        transform: rotate(0);
+        left: auto;
+        top: auto;
+    }
+    .demo-icon.icon-right-open-big
+    {
+        display: none;
+    }
+    body.unchained[lang=us] .avatars-copy
+    {
+        width: 80%;
+    }
+    .video-home
+    {
+        position:absolute !important;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url(../img/header/kingdom-hearts-header-still.jpg);
+        background-position: center top;
+        backgorund-size: auto;
+    }
+    .header-still
+    {
+        display: none;
+    }
+    .header-logo
+    {
+        position: relative;
+        margin: 0 auto;
+        left: auto;
+    }
+    .individual-game-logo
+    {
+        display: none;
+    }
+    .main-navigation, .single-game-nav
+    {
+        display: none;
+    }
+    #nav-menu-modal .main-navigation, #nav-menu-modal .single-game-nav, #nav-menu-modal .games-navigation
+    {
+        display: block;
+    }
+    #nav-menu-modal .main-navigation
+    {
+        background: none;
+        border: none;
+    }
+    #nav-menu-modal .nav-item
+    {
+        display: block;
+        text-align: center;
+    }
+    .games-navigation
+    {
+        overflow: visible;
+        max-height: 10000px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: none;
+    }
+    .games-navigation .nav-item
+    {
+        background: none;
+    }
+    .trailer-house
+    {
+      width: 100%;
+    }
+    .buy.outbound, .buy.outbound:active, .buy.outbound:visited, .buy.outbound:focus
+    {
+      width: 80%;
+    }
+    .logos-house
+    {
+      display: none;
+    }
+    .contaner
+    {
+      width: 100%;
+      padding: 0;
+    }
+    .large-logos-holder img
+    {
+      width: 80%;
+      margin: 10px auto;
+      display: block;
+    }
+    .packshot-container
+    {
+      display: none;
+    }
+    .container-small
+    {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+    .screenshot-thumbs-holder img
+    {
+        margin: 10px auto;
+        display: block;
+        width: 80%;
+    }
+    .individual-game-logo:before, .timeline-bar:before
+    {
+        display: none;
+    }
+    .timeline-bar
+    {
+        display: none;
+    }
+    .game-info-text h1, .game-info-text div
+    {
+        width: 80%;
+    }
+    .container
+    {
+        padding: 0;
+    }
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+    {
+        padding: 0;
+    }
+    .section.buy .col-md-6
+    {
+        width: 100%;
+    }
+    .mobile-nav-open
+    {
+        display: block;
+    }
+    .trailer-title
+    {
+        padding: 0;
+    }
+    .section.timeline.content
+    {
+        display: none;
+    }
+    .trailer-title.about
+    {
+        margin-top: -2.5%;
+    }
+    .character-text-slider
+    {
+        width: 100%;
+        font-size: 1em;
+    }
+    .union-chi-logo
+    {
+        width: 80%;
+    }
+    .right-carat
+    {
+        font-size: 1.75em;
+    }
+    .avatars-copy ol
+    {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        width: 90%;
+    }
+    .avatars-copy ol li
+    {
+        font-size: 1em;
+        padding: 5px;
+        line-height: 1;
+    }
+    .pre-reg-rewards-image, .pre-reg-rewards-image.stretch
+    {
+        display: inline-block;
+        width: 35%;
+        right: 0;
+        position: relative;
+        vertical-align: middle;
+    }
+    .container-small.buy-info h1
+    {
+        margin-top: 0;
+    }
+    .container-small.buy-info
+    {
+        padding-top: 0;
+    }
+    .game-info-text
+    {
+        margin-top: 0;
+    }
+    .reward-info
+    {
+        display: inline-block;
+        vertical-align: middle;
+        width: 65%;
+        position:relative;
+        font-size: .75em;
+    }
+    .rewards-text
+    {
+        width: 75%;
+        margin-left: 10%;
+    }
+    .section-header
+    {
+        padding: 0;
+    }
+}
+ @media screen and (max-width: 768px) and (orientation:landscape)
+ {
+    .pre-reg-rewards-image
+    {
+        width: 25%;
+    }
+ }
